@@ -58,8 +58,9 @@ def main():
     sum_test = sum_test.reset_index()
     print(sum_test)
 
-    os.makedirs('C:/Projects/CSIS638/Project/data', exist_ok=True)
-    return sum_test.to_csv('C:/Projects/CSIS638/Project/data/test_survey_county_code.csv')
+    output_path = '~/robinsonc6/data/agriculture'
+    out_file = f'{state}_county_code_{commodity_desc}.csv'
+    return sum_test.to_csv(os.path.join(output_path, out_file ))
 if __name__ == "__main__":
     main()
     
