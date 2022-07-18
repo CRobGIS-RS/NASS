@@ -21,7 +21,7 @@ def main():
         data summarized by county and year
         includes sum, mean, min, and max
     """
-    api_key = "B6F71533-E3A1-3B55-BF31-5C331D862286"
+    api_key = "Your API Key"
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("-so", "--source", help= "SURVEY or CENSUS", type=str)
